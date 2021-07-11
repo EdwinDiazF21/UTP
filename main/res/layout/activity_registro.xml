@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#C88E0533"
+        android:textStyle="bold"
+        android:text="REGISTRAR"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="28dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:text="Nombre"/>
+
+    <EditText
+        android:id="@+id/txt_Reg_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#606060"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="12dp"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:text="Apellido"/>
+
+    <EditText
+        android:id="@+id/txt_Reg_apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#606060"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="12dp"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:text="Usuario"/>
+
+    <EditText
+        android:id="@+id/txt_Reg_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#606060"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="12dp"
+        android:text=""/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:text="Contraseña"/>
+
+    <EditText
+        android:id="@+id/txt_Reg_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#606060"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="12dp"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:text="Tipo de usuario"/>
+
+    <RadioGroup
+        android:id="@+id/rg_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#606060"
+        android:textSize="18dp"
+
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/rb_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Administrador"/>
+        <RadioButton
+            android:id="@+id/rb_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Normal"/>
+
+    </RadioGroup>
+
+    <Button
+        android:onClick="Guardar"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"/>
+
+    <Button
+        android:onClick="Out"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir"/>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#D54848">
+        
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/Logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:text="Gloveppetito 24 Eats"
+            android:textAlignment="center"
+            android:textSize="45dp"
+            android:textColor="#AFACAC"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="55dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#AFACAC">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:textColor="@color/black"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etxtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etxtContra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Iniciar Sesión"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:onClick="Iniciar_Sesion"/>
+    </LinearLayout>
+
+
+</LinearLayout>
